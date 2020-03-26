@@ -19,13 +19,13 @@ public class Account {
         this.balance += amountToDeposit;
     }
 
-    public void withdraw(int amountToWithdraw) throws Exception {
+    public void withdraw(int amountToWithdraw) throws NullPointerException {
 
         if(checkForSufficientFunds(amountToWithdraw)) {
             this.balance -= amountToWithdraw;
         }
         else {
-            throw new Exception(String.format("Insufficient funds: could not withdraw %d from this account", amountToWithdraw));
+            throw new NullPointerException(String.format("Insufficient funds: could not withdraw %d from this account", amountToWithdraw));
         }
     }
 

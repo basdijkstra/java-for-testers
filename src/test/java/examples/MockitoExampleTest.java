@@ -11,10 +11,10 @@ public class MockitoExampleTest {
     public void testSendMessageUsingMock() {
 
         // ARRANGE
-        MessageClient messageClient = new MessageClient();
+        WhatsApp messageClient = new WhatsApp();
 
         // Mock away the behaviour of the IMessage class
-        IMessage message = mock(IMessage.class);
+        Message message = mock(Message.class);
 
         // Define the behaviour of the mock
         when(message.getContents()).thenReturn("This is a mock message");

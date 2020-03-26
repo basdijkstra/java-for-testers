@@ -1,8 +1,8 @@
 package examples;
 
-public class MessageClient {
+public class WhatsApp {
 
-    public String sendMessage(IMessage message) {
+    public String sendMessage(Message message) {
 
         String contents = message.getContents();
         String author = message.getAuthor();
@@ -12,3 +12,4 @@ public class MessageClient {
         return String.format("%s sent a message with contents '%s' and length %d", author, contents, length);
     }
 }
+

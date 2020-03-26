@@ -1,6 +1,7 @@
 package exercises;
 
 import org.junit.*;
+import org.junit.rules.ExpectedException;
 
 public class AccountTest {
 
@@ -30,14 +31,22 @@ public class AccountTest {
         // TODO: add an assertion to check that the new balance is equal to 1500
     }
 
+    @Rule
+    public ExpectedException ee = ExpectedException.none();
+
     @Test
-    public void withdraw1100FromAccount_shouldThrowException() throws Exception{
+    public void withdraw1100FromAccount_shouldThrowException() {
+
+        ee.expect(Exception.class);
+        ee.expectMessage("Insufficient funds: could not withdraw 1100 from this account");
 
         // Arrange - create a new account with a balance of 1000
         // TODO: create a new instance of the Account class with a balance of 1000
+        Account account = new Account(1000);
 
         // Act - withdraw 1100
         // TODO: add a call to the withdraw() method to withdraw 1100
+        account.withdraw(1100);
 
         // Assert
         // TODO: make this test pass by specifying that you expect an exception
