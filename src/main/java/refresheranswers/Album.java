@@ -1,4 +1,4 @@
-package refresher;
+package refresheranswers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,9 @@ public class Album {
     // - The number of tracks on this album
     // What data types do these properties have?
 
+    private String title;
+    private String artist;
+    private int numberOfTracks;
 
     /* 2 */
 
@@ -22,6 +25,17 @@ public class Album {
     // Add a no-argument constructor
     // Specify a default value for each property
 
+    public Album() {
+        this.title = "Default title";
+        this.artist = "Default artist";
+        this.numberOfTracks = 10;
+    }
+
+    public Album(String title, String artist, int numberOfTracks) {
+        this.title = title;
+        this.artist = artist;
+        this.numberOfTracks = numberOfTracks;
+    }
 
     /* 3 */
 
@@ -30,6 +44,17 @@ public class Album {
     // Do you need parameters?
     // What is the return type of the method?
 
+    public void addTrack() {
+        this.numberOfTracks++;
+    }
+
+    public String toString() {
+        return String.format("The album '%s' by %s has %d tracks", this.title, this.artist, this.numberOfTracks);
+    }
+
+    public int getNumberOfTracks() {
+        return this.numberOfTracks;
+    }
 
     // Write a method toString() that returns a summary of the album info
     // Use String.format() to construct the following sentence:
@@ -44,6 +69,16 @@ public class Album {
     // You can use any title, artist and number of tracks you want
 
     public void anArrayOfAlbums() {
+
+        Album[] albumArray = new Album[3];
+
+        albumArray[0] = new Album("Sunday 8 PM", "Faithless", 10);
+        albumArray[1] = new Album("Reverence", "Faithless", 10);
+        albumArray[2] = new Album("Nevermind", "Nirvana", 11);
+
+        for(int i = 0; i < albumArray.length; i++) {
+            System.out.println(albumArray[i].toString());
+        }
     }
 
     // Write a method that creates and fills a list of albums
@@ -51,6 +86,15 @@ public class Album {
     // You can use any title, artist and number of tracks you want
 
     public void aListOfAlbums() {
+
+        List<Album> albumList = new ArrayList<Album>();
+        albumList.add(new Album("Sunday 8 PM", "Faithless", 10));
+        albumList.add(new Album("Reverence", "Faithless", 10));
+        albumList.add(new Album("Nevermind", "Nirvana", 11));
+
+        for(Album album: albumList) {
+            System.out.println(album.toString());
+        }
     }
 
     /* 5 */
