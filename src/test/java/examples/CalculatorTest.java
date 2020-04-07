@@ -1,5 +1,6 @@
 package examples;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -31,7 +32,15 @@ public class CalculatorTest {
 
         calc.add(5);
 
-        calc.divideByZeroThrowsException(0);
+        try {
+            calc.divideByZeroThrowsException(1);
+        }
+        catch (ArithmeticException ae) {
+            System.out.println("Method threw an exception");
+        }
+        finally {
+            System.out.println("FINALLY");
+        }
     }
 
     @Test(expected = ArithmeticException.class)
