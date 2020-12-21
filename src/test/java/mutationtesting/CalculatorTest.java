@@ -9,7 +9,7 @@ public class CalculatorTest {
 		
 		Calculator calculator = new Calculator();
 		calculator.add(2);
-		Assert.assertEquals(calculator.getResult(), 2);
+		Assert.assertEquals(2, calculator.getResult());
 	}
 	
 	@Test
@@ -17,20 +17,20 @@ public class CalculatorTest {
 		
 		Calculator calculator = new Calculator(2);
 		calculator.power(3);
-		Assert.assertEquals(calculator.getResult(), 8);
+		Assert.assertEquals(8, calculator.getResult());
 	}
 	
 	@Test
 	public void testConditionalSetTrue() {
 		
 		Calculator calculator = new Calculator();
-		Assert.assertEquals(calculator.setConditional(2, true), true);
+		Assert.assertTrue(calculator.setConditional(2, true));
 	}
 	
 	@Test
 	public void testConditionalSetFalse() {
 		
 		Calculator calculator = new Calculator();
-		Assert.assertEquals(calculator.setConditional(3, false), false);
+		Assert.assertFalse(calculator.setConditional(3, false));
 	}
 }

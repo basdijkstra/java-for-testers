@@ -1,14 +1,14 @@
 package answers;
 
 import com.tngtech.java.junit.dataprovider.*;
-import exercises.Account;
+import exercises.OldAccount;
 import org.junit.*;
 import org.junit.runner.RunWith;
 
 @RunWith(DataProviderRunner.class)
-public class DataDrivenAccountTest {
+public class DataDrivenOldAccountTest {
 
-    private Account account;
+    private OldAccount oldAccount;
 
     @DataProvider
     public static Object[][] accountTestData() {
@@ -22,7 +22,7 @@ public class DataDrivenAccountTest {
     @Before
     public void createAccount() {
 
-        account = new Account(1000);
+        oldAccount = new OldAccount(1000);
     }
 
     @Test
@@ -30,9 +30,9 @@ public class DataDrivenAccountTest {
     public void withdraw500FromAccount_shouldResultInCorrectBalance(int amountToWithdraw, int expectedBalanceAfterWithdrawal) throws Exception {
 
         // Act - withdraw 500
-        account.withdraw(amountToWithdraw);
+        oldAccount.withdraw(amountToWithdraw);
 
         // Assert - check that the remaining balance is 500
-        Assert.assertEquals(expectedBalanceAfterWithdrawal, account.getBalance());
+        Assert.assertEquals(expectedBalanceAfterWithdrawal, oldAccount.getBalance());
     }
 }

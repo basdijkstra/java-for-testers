@@ -32,4 +32,12 @@ public class Calculator {
         this.total = this.total / numberToDivideBy;
     }
 
+    public void withdraw(int numberToWithdraw) {
+
+        if (numberToWithdraw < 0) {
+            throw new IllegalArgumentException("Number to withdraw should be a positive integer");
+        }
+        this.total -= numberToWithdraw;
+    }
+
 }

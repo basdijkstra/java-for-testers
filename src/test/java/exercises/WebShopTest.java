@@ -14,6 +14,7 @@ public class WebShopTest {
         // Create mocks for the Order class and the PaymentProvider class
 
         // Configure the Order mock so that getOrderNumber() returns 5678
+        // and getOrderTotal() returns 5
 
         // Configure the PaymentProvider mock so that getResult("Paypal") returns "FAIL"
         // and getResult("iDeal") returns "SUCCESS"
