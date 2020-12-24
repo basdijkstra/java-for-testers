@@ -1,4 +1,4 @@
-package examples;
+package exercises;
 
 public class Calculator {
 
@@ -29,11 +29,8 @@ public class Calculator {
         this.total *= valueToMultiplyBy;
     }
 
-    public void divide(int valueToDivideBy) {
+    public void divide(int valueToDivideBy) throws ArithmeticException {
 
-        if (valueToDivideBy == 0) {
-            throw new ArithmeticException("You tried to divide by zero!");
-        }
         this.total /= valueToDivideBy;
     }
 }

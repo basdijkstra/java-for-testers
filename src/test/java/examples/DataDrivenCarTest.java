@@ -10,17 +10,12 @@ import org.junit.runner.RunWith;
 @RunWith(DataProviderRunner.class)
 public class DataDrivenCarTest {
 
-    @DataProvider
-    public static Object[][] carTestData() {
-        return new Object[][] {
-            {"Maserati", "Ghibli", true},
-            {"Ferrari","Testarossa", true},
-            {"Ford","Focus", false}
-        };
-    }
-
     @Test
-    @UseDataProvider("carTestData")
+    @DataProvider({
+            "Maserati, Ghibli, true",
+            "Ferrari, Testarossa, true",
+            "Ford, Focus, false"
+    })
     public void isItalianTest(String make, String model, boolean expectedIsItalian) {
 
         Car myCar = new Car(make,model,"blue");
