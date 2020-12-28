@@ -55,18 +55,12 @@ public class Album {
 
     /* 5 */
 
-    // Add a classic for loop to the first method from section 4
-    // (the one where you added the array)
-    // Iterate over the array and print the album info summary (from section 3) in the array to the standard output
-    // Use System.out.println to print text to the standard output
+    // Add an enhanced loop to both methods from section 4
+    // Iterate over the array and the list and print the result of the toString()
+    // method to the standard output for each album in the array c.q. the list.
 
-    // Add a foreach loop to the second method from section 4
-    // (the one where you added the list)
-    // Iterate over the list and print the album info summary (from section 3) in the array to the standard output
-    // Use System.out.println to print text to the standard output
+    public void oops() throws UnsupportedOperationException {
 
-    public void oops() throws Exception {
-
-        throw new Exception("Unexpected method call in Album");
+        throw new UnsupportedOperationException("Unexpected method call in Album");
     }
 }

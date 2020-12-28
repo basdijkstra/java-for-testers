@@ -32,12 +32,6 @@ public class AlbumTest {
     // Write a test method that does the following:
     // Arrange - create a new album that represents Alanis Morissette - Jagged Little Pill with 13 tracks
     // Act - call the oops() method that is defined in the Album class
-    // Assert - check that the method throws an Exception
-    // You can do this in two ways:
-    // 1) Only check that an Exception is thrown using the 'expected =' notation, see
-    // https://www.baeldung.com/junit-assert-exception for an example under bullet 3.
-    // 2) Check not only the type of exception but also its message, using ExpectedException and the JUnit @Rule
-    // https://junit.org/junit4/javadoc/4.12/org/junit/rules/ExpectedException.html
-
-
+    // Assert - check that the method throws an UnsupportedOperationException with message 'Unexpected method call in Album'
+    // See the CalculatorExceptionTest class in the 'examples' package for an example on how to do this
 }

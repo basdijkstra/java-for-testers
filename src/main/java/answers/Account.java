@@ -106,7 +106,7 @@ public class Account {
 
     // Write a method that creates and fills a list of accounts
     // Three elements is enough!
-    // You can use any title, author and year of publishing you want
+    // You can use any balance, type and account number you want
 
     public void aListOfAccounts() {
 
@@ -125,5 +125,5 @@ public class Account {
 
     // Add an enhanced loop to both methods from section 4
     // Iterate over the array and the list and print the result of the toString()
-    // method to the standard output for each book in the array c.q. the list.
+    // method to the standard output for each account in the array c.q. the list.
 }
