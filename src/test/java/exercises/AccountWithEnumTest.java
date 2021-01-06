@@ -1,7 +1,5 @@
 package exercises;
 
-import answers.AccountType;
-import answers.AccountWithEnum;
 import org.junit.Assert;
 import org.junit.Test;
 
