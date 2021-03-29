@@ -11,14 +11,10 @@
     <properties>
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
-        <junit.version>4.13.1</junit.version>
+        <junit.version>4.13.2</junit.version>
         <junit.dataprovider.version>2.6</junit.dataprovider.version>
         <mockito.version>3.0.0</mockito.version>
-        <pitest.version>1.4.10</pitest.version>
-        <restassured.version>4.1.1</restassured.version>
-        <wiremock.version>2.24.1</wiremock.version>
-        <jackson.databind.version>2.9.10</jackson.databind.version>
-        <selenium.webdriver.version>3.141.59</selenium.webdriver.version>
+        <pitest.version>1.6.2</pitest.version>
     </properties>
     <dependencies>
         <dependency>
