@@ -28,6 +28,7 @@ public class Account {
     // Feel free to use that to generate a random account number between 10000 and 99999
 
 
+
     /* 3 */
 
     // Add a method getAccountNumber() that returns the account number
@@ -43,6 +44,7 @@ public class Account {
     // Write a method withdraw() that allows you to withdraw money (whole euros only, again) from an account
     // Do you need parameters?
     // What is the return type of the method?
+
 
 
     // Write a method toString() that returns a description of the account in the form

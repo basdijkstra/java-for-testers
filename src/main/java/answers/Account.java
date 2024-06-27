@@ -50,10 +50,6 @@ public class Account {
     // Do you need parameters?
     // What is the return type of the method?
 
-    public int getAccountNumber() {
-
-        return this.accountNumber;
-    }
 
     // Write a method deposit() that allows you to deposit money (whole euros only, again) into an account
     // Do you need parameters?
