@@ -1,9 +1,5 @@
 package exercises;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-
 public class Account {
 
     /* 1 */
@@ -22,16 +18,12 @@ public class Account {
 
     // Add a no-argument constructor
     // Specify a default value for each property
-    // The account number can be a fixed value for now, but if you want,
-    // you can generate a random number between 1 and 100 (for example) by using
-    // (int) (Math.random() * (101 - 1)) + 1;
-    // Feel free to use that to generate a random account number between 10000 and 99999
-
+    // The account number can be a fixed value for now, such as 12345
 
 
     /* 3 */
 
-    // Add a method getAccountNumber() that returns the account number
+    // Add a method getBalance() that returns the account balance
     // Do you need parameters?
     // What is the return type of the method?
 
@@ -75,4 +67,20 @@ public class Account {
     // Add an enhanced loop to both methods from section 4
     // Iterate over the array and the list and print the result of the toString()
     // method to the standard output for each account in the array c.q. the list.
+
+    /* 6 */
+
+    // Create an enumeration called AccountType and add possible values CHECKING or SAVINGS
+    // Modify your account class so that the account type can only have a value included in this enum.
+
+    /* 7 */
+
+    // Modify the implementation of the withdraw() method so that you can only overdraw on CHECKING accounts
+    // If you try and overdraw on an account of type SAVINGS, print a message to the standard output.
+    // DON'T perform the overdraw in this case!
+
+    /* 8 */
+
+    // Modify the implementation of the withdraw() method again, but now so that it
+    // throws an ArithmeticException when you try and overdraw on a savings account.
 }
